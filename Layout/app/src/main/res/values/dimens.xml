@@ -9,4 +9,5 @@
     <dimen name="dimen_144dp">144dp</dimen>
     <dimen name="font_18sp">18sp</dimen>
     <dimen name="dimen_96dp">96dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
 </resources>
