@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import com.jati.dev.layout.section.HistoryFragment
+import com.jati.dev.layout.section.history.HistoryFragment
 import com.jati.dev.layout.section.MyWalletFragment
 import com.jati.dev.layout.section.OrderFragment
 import com.jati.dev.layout.section.SettingsFragment
@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initUiComponents() {
         bottom_nav.setOnNavigationItemSelectedListener(navigationSelectedListener)
+        bottom_nav.selectedItemId = R.id.nav_history
         removeShiftMode(bottom_nav)
     }
 

@@ -10,4 +10,7 @@
     <dimen name="font_18sp">18sp</dimen>
     <dimen name="dimen_96dp">96dp</dimen>
     <dimen name="dimen_64dp">64dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
 </resources>
