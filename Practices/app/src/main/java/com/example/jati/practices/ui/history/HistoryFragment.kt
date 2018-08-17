@@ -48,9 +48,11 @@ class HistoryFragment : BaseFragment() {
         initDummyData()
         historyViewModel.loadHistory().observe(this, Observer<List<History>> { list ->
             list?.let {
-                historyList.clear()
-                historyList.addAll(it)
-                historyAdapter.notifyDataSetChanged()
+                if (it.isEmpty()) initDummyData() else {
+                    historyList.clear()
+                    historyList.addAll(it)
+                    historyAdapter.notifyDataSetChanged()
+                }
             }
         })
     }
