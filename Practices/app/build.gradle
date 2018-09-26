@@ -23,7 +23,7 @@ android {
         versionCode generateVersionCode()
         versionName generateVersionName()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        project.ext.set("archivesBaseName", "newsapp-" + generateVersionName())
+        project.ext.set("archivesBaseName", "practices-" + generateVersionName())
     }
     buildTypes {
         debug {
