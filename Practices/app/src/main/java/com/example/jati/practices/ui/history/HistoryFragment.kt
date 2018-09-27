@@ -45,7 +45,7 @@ class HistoryFragment : BaseFragment() {
             adapter = historyAdapter
             addItemDecoration(ListItemDecoration())
         }
-        initDummyData()
+
         historyViewModel.loadHistory().observe(this, Observer<List<History>> { list ->
             list?.let {
                 if (it.isEmpty()) initDummyData() else {
